@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <string.h> //Tive que incluir pois estava apresentando o resultado de duas variaveis junto
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
@@ -18,7 +18,6 @@ int main() {
     
     printf("Digite o código da carta: \n"); 
     fgets(codigocidade, sizeof(codigocidade), stdin); codigocidade[strcspn(codigocidade, "\n")] = '\0';
-    
     printf("Digite o nome da cidade: \n");
     fgets(nome, sizeof(nome), stdin); nome[strcspn(nome, "\n")] = '\0';
     printf("Digite a População: \n");

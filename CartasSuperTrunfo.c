@@ -24,7 +24,7 @@ int main() {
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
     
-    printf("***Primeira Carta\n");
+    printf("***Primeira Carta***\n");
     printf("Digite o estado: \n");
     fgets(estado, sizeof(estado), stdin); estado[strcspn(estado, "\n")] = '\0';
     while (getchar() != '\n');
@@ -62,7 +62,7 @@ int main() {
     printf("A Densidade Populacional é: %f pessoas/km²\n", densidade);
     printf("O PIB per Capita é: %f reais\n", pibpercapita);
 
-    printf("***Segunda Carta\n");
+    printf("***Segunda Carta***\n");
     printf("Digite o estado: \n");
     fgets(estado2, sizeof(estado2), stdin); estado2[strcspn(estado2, "\n")] = '\0';
     while (getchar() != '\n');

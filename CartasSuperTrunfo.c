@@ -10,12 +10,15 @@ int main() {
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     int pontosturisticos;
     float populacao, area, pib, densidade, pibpercapita;
-    char nome[50], codigocidade[20];
+    char nome[50], codigocidade[20], estado[2];
     
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
     
+    printf("Digite o estado: \n");
+    scanf("%s", &estado);
+    while (getchar() != '\n');
     printf("Digite o código da carta: \n"); 
     fgets(codigocidade, sizeof(codigocidade), stdin); codigocidade[strcspn(codigocidade, "\n")] = '\0';
     printf("Digite o nome da cidade: \n");
@@ -40,14 +43,15 @@ int main() {
     densidade = (populacao / area);
     pibpercapita = (pib / populacao);
 
+    printf("O Estado é: %s\n", estado);
     printf("O código da carta é: %s\n", codigocidade);
     printf("O nome da cidade é: %s\n", nome);
     printf("Quantidade de Pontos Turísticos: %d\n", pontosturisticos);
     printf("A Área da Cidade é: %f km²\n", area);
-    printf("O PIB da Cidade é: R$ %f\n", pib);
+    printf("O PIB da Cidade é: %f bilhões de reais\n", pib);
     printf("A População da Cidade é: %f\n", populacao);
-    printf("A Densidade Populacional é: %f\n", densidade);
-    printf("O PIB per Capita é: %f\n", pibpercapita);
+    printf("A Densidade Populacional é: %f pessoas/km²\n", densidade);
+    printf("O PIB per Capita é: %f reais\n", pibpercapita);
 
     return 0;
 }

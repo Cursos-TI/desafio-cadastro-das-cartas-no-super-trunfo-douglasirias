@@ -26,23 +26,23 @@ int main() {
     // Primeira Carta
 
     printf("***Primeira Carta***\n");
-    printf("Digite o estado: \n");
+    printf("Digite o estado da primeira carta: \n");
     fgets(estado, sizeof(estado), stdin); estado[strcspn(estado, "\n")] = '\0';
     while (getchar() != '\n');
-    printf("Digite o código da carta: \n"); 
+    printf("Digite o código da primeira carta: \n"); 
     fgets(codigocarta, sizeof(codigocarta), stdin); codigocarta[strcspn(codigocarta, "\n")] = '\0';
-    printf("Digite o nome da cidade: \n");
+    printf("Digite o nome da cidade da primeira carta: \n");
     fgets(nome, sizeof(nome), stdin); nome[strcspn(nome, "\n")] = '\0';
-    printf("Digite a População: \n");
+    printf("Digite a população da primeira carta: \n");
     scanf("%ld", &populacao);
     while (getchar() != '\n');
-    printf("Digite a Área: \n");
+    printf("Digite a área da primeira carta: \n");
     scanf("%f", &area);
     while (getchar() != '\n');
-    printf("Digite o PIB: \n");
+    printf("Digite o PIB da primeira carta: \n");
     scanf("%f", &pib);
     while (getchar() != '\n');
-    printf("Digite a Quantidade de Pontos Turísticos: \n");
+    printf("Digite a quantidade de pontos turísticos da primeira carta: \n");
     scanf("%d", &pontosturisticos);
 
     // Exibição dos Dados das Cartas:
@@ -65,27 +65,27 @@ int main() {
 
     //Super poder da carta1
     superpoder = (populacao + area + pib + pibpercapita + densidade + pontosturisticos);
-    printf("O super poder da carta 1 é: %f", superpoder);
+    printf("O super poder da carta 1 é: %f\n", superpoder);
 
     //Segunda Carta
     printf("***Segunda Carta***\n");
-    printf("Digite o estado: \n");
+    printf("Digite o estadoda segunda carta: \n");
     fgets(estado2, sizeof(estado2), stdin); estado2[strcspn(estado2, "\n")] = '\0';
     while (getchar() != '\n');
-    printf("Digite o código da carta: \n"); 
+    printf("Digite o código da segunda carta: \n"); 
     fgets(codigocarta2, sizeof(codigocarta2), stdin); codigocarta2[strcspn(codigocarta2, "\n")] = '\0';
-    printf("Digite o nome da cidade: \n");
+    printf("Digite o nome da cidade da segunda carta: \n");
     fgets(nome2, sizeof(nome2), stdin); nome2[strcspn(nome2, "\n")] = '\0';
-    printf("Digite a População: \n");
+    printf("Digite a população da segunda carta: \n");
     scanf("%ld", &populacao2);
     while (getchar() != '\n');
-    printf("Digite a Área: \n");
+    printf("Digite a área da segunda carta: \n");
     scanf("%f", &area2);
     while (getchar() != '\n');
-    printf("Digite o PIB: \n");
+    printf("Digite o PIB da segunda carta: \n");
     scanf("%f", &pib2);
     while (getchar() != '\n');
-    printf("Digite a Quantidade de Pontos Turísticos: \n");
+    printf("Digite a quantidade de pontos turísticos da segunda carta: \n");
     scanf("%d", &pontosturisticos2);
 
     // Exibição dos Dados das Cartas:
@@ -119,7 +119,7 @@ int main() {
     
     //Super poder da carta2
     superpoder2 = (populacao2 + area2 + pib2 + pibpercapita2 + densidade2 + pontosturisticos2);
-    printf("O super poder da carta 2 é: %f", superpoder2);
+    printf("O super poder da carta 2 é: %f\n", superpoder2);
     
     return 0;
 }

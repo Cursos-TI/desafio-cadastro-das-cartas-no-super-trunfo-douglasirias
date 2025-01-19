@@ -23,7 +23,8 @@ int main() {
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
+    // Primeira Carta
+
     printf("***Primeira Carta***\n");
     printf("Digite o estado: \n");
     fgets(estado, sizeof(estado), stdin); estado[strcspn(estado, "\n")] = '\0';
@@ -62,6 +63,11 @@ int main() {
     printf("A Densidade Populacional é: %f pessoas/km²\n", densidade);
     printf("O PIB per Capita é: %f reais\n", pibpercapita);
 
+    //Super poder da carta1
+    superpoder = (populacao + area + pib + pibpercapita + densidade + pontosturisticos);
+    printf("O super poder da carta 1 é: %f", superpoder);
+
+    //Segunda Carta
     printf("***Segunda Carta***\n");
     printf("Digite o estado: \n");
     fgets(estado2, sizeof(estado2), stdin); estado2[strcspn(estado2, "\n")] = '\0';
@@ -110,5 +116,10 @@ int main() {
     printf("PIB per Capita da Carta 1 > PIB per Capita da Carta 2: %d\n", pibpercapita > pibpercapita2);
     printf("Densidade da Carta 1 < Densidade 2: %d\n", densidade < densidade2);
     printf("Pontos Turisticos da Carta 1 > Pontos Turisticos da Carta 2: %d\n", pontosturisticos > pontosturisticos2);
+    
+    //Super poder da carta2
+    superpoder2 = (populacao2 + area2 + pib2 + pibpercapita2 + densidade2 + pontosturisticos2);
+    printf("O super poder da carta 2 é: %f", superpoder2);
+    
     return 0;
 }

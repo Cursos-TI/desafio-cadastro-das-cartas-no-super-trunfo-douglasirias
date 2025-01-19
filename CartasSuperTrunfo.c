@@ -103,11 +103,11 @@ int main() {
     /*Comparar os valores das cartas, populacao, area, pib, pib per capita, 
     densidade populacional invertida, pontos turisticos*/
 
-    printf("Populaçao da Carta 1 > Populacao da Carta 2: %ld", populacao > populacao2);
-    printf("Area da Carta 1 > Area da Carta 2: %f", area > area2);
-    printf("PIB da Carta 1 > PIB 2: %f", pib > pib2);
-    printf("PIB per Capita da Carta 1 > PIB per Capita da Carta 2: %f", pibpercapita > pibpercapita2);
-    printf("Densidade da Carta 1 < Densidade 2: %f", densidade > densidade2);
-    printf("Pontos Turisticos da Carta 1 > Pontos Turisticos da Carta 2: %d", pontosturisticos > pontosturisticos2);
+    printf("Populaçao da Carta 1 > Populacao da Carta 2: %ld\n", populacao > populacao2);
+    printf("Area da Carta 1 > Area da Carta 2: %f\n", area > area2);
+    printf("PIB da Carta 1 > PIB 2: %f\n", pib > pib2);
+    printf("PIB per Capita da Carta 1 > PIB per Capita da Carta 2: %f\n", pibpercapita > pibpercapita2);
+    printf("Densidade da Carta 1 < Densidade 2: %f\n", densidade > densidade2);
+    printf("Pontos Turisticos da Carta 1 > Pontos Turisticos da Carta 2: %d\n", pontosturisticos > pontosturisticos2);
     return 0;
 }

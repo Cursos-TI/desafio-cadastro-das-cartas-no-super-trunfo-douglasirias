@@ -38,10 +38,12 @@ int main() {
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+   
     //Calcular a Densidade Populacional e Pib per capita:
-
     densidade = (populacao / area);
     pibpercapita = (pib / populacao);
+
+    //Area para exibicaçao dos dados
 
     printf("O Estado é: %s\n", estado);
     printf("O código da carta é: %s\n", codigocidade);

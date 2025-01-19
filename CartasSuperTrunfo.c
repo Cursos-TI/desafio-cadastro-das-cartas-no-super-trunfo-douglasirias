@@ -23,8 +23,10 @@ int main() {
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+    
     // Primeira Carta
-
+    // Aqui estou pedindo os dados da primeira carta
+    // Tive que optar por while e fgets porque estava pedindo duas variaveis de uma so vez
     printf("***Primeira Carta***\n");
     printf("Digite o estado da primeira carta: \n");
     fgets(estado, sizeof(estado), stdin); estado[strcspn(estado, "\n")] = '\0';
@@ -68,6 +70,8 @@ int main() {
     printf("O super poder da carta 1 é: %f\n", superpoder);
 
     //Segunda Carta
+    // Aqui estou pedindo os dados da segunda carta
+    // Tive que usar novamente o while e fgets
     printf("***Segunda Carta***\n");
     printf("Digite o estadoda segunda carta: \n");
     fgets(estado2, sizeof(estado2), stdin); estado2[strcspn(estado2, "\n")] = '\0';
@@ -91,8 +95,8 @@ int main() {
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    
     //Calcular a Densidade Populacional e Pib per capita:
-
     densidade = (float)(populacao2 / area2);
     pibpercapita = (float)(pib2 / populacao2);
 
